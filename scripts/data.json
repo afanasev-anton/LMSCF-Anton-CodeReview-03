@@ -1,0 +1,26 @@
+var teamMembers = [
+	{"name":"Julia",
+	"fullname":"Julia Jackson",
+	"email":"julia@index.com",
+	"image":"img/person1.jpg"},
+
+	{"name":"Fritz",
+	"fullname":"Fritz Jackson",
+	"email":"fritz@index.com",
+	"image":"img/person2.jpg"},
+
+	{"name":"Fran",
+	"fullname":"Fran Fransisk",
+	"email":"fran@index.com",
+	"image":"img/person3.jpg"},
+
+	{"name":"Emmy",
+	"fullname":"Emmy Weinberg",
+	"email":"emmy@index.com",
+	"image":"img/person4.jpg"},
+
+	{"name":"Bill",
+	"fullname":"Bill Wilson",
+	"email":"bill@index.com",
+	"image":"img/person5.jpg"}	
+]

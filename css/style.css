@@ -44,7 +44,7 @@ body {
   color: black; }
 
 #nav-small {
-  margin: 20px 0 0 0; }
+  margin: 0; }
 
 #nav-small a {
   font-size: 100%; }
@@ -183,6 +183,47 @@ body {
   padding: 20px;
   margin: 10px 0;
   border: 1px solid grey; }
+
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  max-width: 830px; }
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  border: 2px solid red;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.person img {
+  height: 100%; }
+
+.person-name {
+  position: relative;
+  top: 80px;
+  right: 150px;
+  width: 80px;
+  height: 35px;
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 120%;
+  font-weight: 800;
+  border-radius: 6px; }
+
+.person-description {
+  background-color: black;
+  color: white;
+  padding: 20px; }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   #input-form h1 {
