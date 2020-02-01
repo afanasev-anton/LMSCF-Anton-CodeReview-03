@@ -77,11 +77,6 @@ body {
   padding: 0;
   overflow: hidden; }
 
-#date {
-  width: 100%;
-  text-align: right;
-  padding: 10px 0; }
-
 .header-small {
   width: 90%;
   font-size: 200%;
@@ -129,6 +124,7 @@ body {
   align-items: center;
   width: 80%;
   max-width: 830px;
+  margin: 10px 0;
   border: 1px solid red;
   background: rgba(255, 255, 255, 0.8);
   overflow: hidden; }
@@ -179,6 +175,7 @@ body {
 #output {
   margin: 10px 0;
   font-size: 200%;
+  font-weight: 900;
   color: #339235; }
 
 .tables {
@@ -187,9 +184,9 @@ body {
   margin: 10px 0;
   border: 1px solid grey; }
 
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  #banner {
-    display: none; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #input-form h1 {
+    font-size: 1.6em; } }
 @media screen and (max-width: 480px) {
   #header {
     height: 80px; }
@@ -213,31 +210,24 @@ body {
     margin: 10px 20px 0;
     float: none; }
 
-  #banner {
-    display: none; }
+  .header-small {
+    font-size: 150%;
+    margin: 10px 0 0; }
 
-  #banner-hor {
-    display: none; }
+  #input-form h1 {
+    font-size: 120%;
+    text-align: center; }
 
-  .pic {
-    min-width: 104px;
-    width: 45%; }
+  #output {
+    font-size: 110%; }
 
-  .pic-big {
-    display: none; }
+  .con-column h1 {
+    font-size: 120%; }
 
-  #banner-mob {
-    display: block;
-    height: 100%;
-    overflow: hidden; }
+  .input-box {
+    margin: 5px 0; }
 
-  .pic-hide {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: column;
-    min-width: 104px;
-    width: 45%;
-    margin: 0 0 15px; } }
+  .label {
+    font-size: 110%; } }
 
 /*# sourceMappingURL=style.css.map */

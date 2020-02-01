@@ -83,12 +83,6 @@ body
 	margin: 0
 	padding: 0
 	overflow: hidden
-	
-//bar with actual date
-#date
-	width: 100%
-	text-align: right
-	padding: 10px 0
 //subheaders
 .header-small
 	width: 90%
@@ -122,7 +116,7 @@ body
 	align-items: center
 	width: 80%
 	max-width: 830px
-	//height: 400px
+	margin: 10px 0
 	border: 1px solid red
 	background: rgba(255, 255, 255, 0.8)
 	overflow: hidden
@@ -167,6 +161,7 @@ body
 #output
 	margin: 10px 0
 	font-size: 200%
+	font-weight: 900
 	color: #339235
 
 //box with small tables
@@ -178,9 +173,9 @@ body
 
 //Media Queries
 //tablets
-@media screen and (min-width: 481px) and (max-width: 1024px)
-	#banner
-		display: none
+@media screen and (min-width: 768px) and (max-width: 1024px)
+	#input-form h1
+		font-size: 1.6em
 //mobile devises
 @media screen and (max-width: 480px)
 	#header
@@ -198,21 +193,17 @@ body
 	#footer img
 		margin: 10px 20px 0
 		float: none
-	#banner
-		display: none
-	#banner-hor
-		display: none
-	.pic
-		min-width: 104px
-		width: 45%
-	.pic-big
-		display: none
-	#banner-mob
-		display: block
-		height: 100%
-		overflow: hidden
-	.pic-hide
-		@include flexbox (nowrap,align-items,center,column)
-		min-width: 104px
-		width: 45%
-		margin: 0 0 15px
+	.header-small
+		font-size: 150%
+		margin: 10px 0 0
+	#input-form h1
+		font-size: 120%
+		text-align: center
+	#output
+		font-size: 110%		
+	.con-column h1
+		font-size: 120%
+	.input-box
+		margin: 5px 0
+	.label
+		font-size: 110%
