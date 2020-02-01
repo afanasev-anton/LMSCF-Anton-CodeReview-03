@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+
+#header {
+  height: 110px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFF3F3; }
+
+#header img {
+  margin: auto 20px; }
+
+#nav, #nav-small {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black; }
+
+#nav li, #nav-small li {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  height: 50px; }
+
+#nav a, #nav-small a {
+  padding: 20px;
+  color: white;
+  font-size: 140%;
+  text-decoration: none; }
+
+#nav a:hover, #nav-small a:hover {
+  background-color: white;
+  color: black; }
+
+#nav-small {
+  margin: 20px 0 0 0; }
+
+#nav-small a {
+  font-size: 100%; }
+
+#footer {
+  height: 100px;
+  width: 100%;
+  margin: 0;
+  padding: auto;
+  background-color: black; }
+
+#footer img {
+  margin: 0 20px;
+  float: right; }
+
+#footer h4 {
+  position: relative;
+  top: 80%;
+  margin: 0;
+  text-align: center;
+  color: white; }
+
+#content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+#date {
+  width: 100%;
+  text-align: right;
+  padding: 10px 0; }
+
+.header-small {
+  width: 90%;
+  font-size: 200%;
+  font-weight: 900;
+  text-align: left;
+  margin: 15px 0;
+  color: white; }
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("traffic-332857_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed; }
+
+.con-column {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #DDDDDD; }
+
+.con-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 90%; }
+
+.con-column p {
+  text-align: center; }
+
+#input-form {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 830px;
+  border: 1px solid red;
+  background: rgba(255, 255, 255, 0.8);
+  overflow: hidden; }
+
+.input-box {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 250px;
+  margin: 15px 0; }
+
+.label {
+  width: 100%;
+  text-align: left;
+  font-size: 120%;
+  font-weight: 900; }
+
+.input-box input {
+  width: 90%;
+  height: 30px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 5px; }
+
+.input-box select {
+  width: 90%;
+  height: 30px;
+  padding: 0 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 5px; }
+
+#input-form button {
+  background-color: #339235;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 120%;
+  cursor: pointer;
+  border: 1px solid #339235;
+  border-radius: 10px; }
+
+#output {
+  margin: 10px 0;
+  font-size: 200%;
+  color: #339235; }
+
+.tables {
+  width: 260px;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid grey; }
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #banner {
+    display: none; } }
+@media screen and (max-width: 480px) {
+  #header {
+    height: 80px; }
+
+  #header > a {
+    display: none; }
+
+  #nav, #nav-small {
+    justify-content: center; }
+
+  #nav a, #nav-small a {
+    padding: 6px; }
+
+  #nav-small {
+    justify-content: center; }
+
+  #footer {
+    height: 120px; }
+
+  #footer img {
+    margin: 10px 20px 0;
+    float: none; }
+
+  #banner {
+    display: none; }
+
+  #banner-hor {
+    display: none; }
+
+  .pic {
+    min-width: 104px;
+    width: 45%; }
+
+  .pic-big {
+    display: none; }
+
+  #banner-mob {
+    display: block;
+    height: 100%;
+    overflow: hidden; }
+
+  .pic-hide {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    min-width: 104px;
+    width: 45%;
+    margin: 0 0 15px; } }
+
+/*# sourceMappingURL=style.css.map */

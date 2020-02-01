@@ -1,0 +1,218 @@
+//colors
+$color-header: #FFF3F3
+$color-navBar: black
+//window sizes (1536px - max window size)
+$size-main: 1024px
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap')
+$font:'Raleway'
+$font-color-nav: white
+$font-size-nav: 140%
+//function for flexing
+@mixin flexbox ($wrapp,$pos,$value,$dir)
+	display: flex
+	flex-wrap: $wrapp
+	#{$pos}: $value
+	flex-direction: $dir
+
+body
+	font-family: $font, sans-serif
+	display: flex
+	flex-flow: column
+	align-items: center
+//main header
+#header
+	height: 110px
+	width: 100%
+	margin: 0
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: $color-header
+#header img
+	margin: auto 20px
+//navigation bar
+#nav
+	display: flex
+	justify-content: flex-start
+	list-style-type: none
+	width: 100%
+	margin: 0
+	padding: 0
+	overflow: hidden
+	background-color: $color-navBar
+#nav li
+	display: flex
+	align-items: center
+	margin: 0
+	height: 50px
+#nav a
+	padding: 20px
+	color: $font-color-nav
+	font-size: $font-size-nav
+	text-decoration: none
+#nav a:hover
+	background-color: white
+	color: black
+//footer navigation bar
+#nav-small
+	@extend #nav
+	margin: 20px 0 0 0
+#nav-small a
+	font-size: 100%
+//Footer
+#footer
+	height: 100px
+	width: 100%
+	margin: 0
+	padding: auto
+	background-color: black
+#footer img
+	margin: 0 20px
+	float: right
+#footer h4
+	position: relative
+	top: 80%
+	margin: 0
+	text-align: center
+	color: white
+//main content
+#content
+	@include flexbox (nowrap,align-items,center,column)
+	width: 100%
+	margin: 0
+	padding: 0
+	overflow: hidden
+	
+//bar with actual date
+#date
+	width: 100%
+	text-align: right
+	padding: 10px 0
+//subheaders
+.header-small
+	width: 90%
+	font-size: 200%
+	font-weight: 900
+	text-align: left
+	margin: 15px 0
+	color: white
+//different containers
+.container
+	width: 100%
+	@include flexbox (nowrap,justify-content,center,column)
+	align-items: center
+	background-image: url('traffic-332857_1920.jpg')
+	background-repeat: no-repeat
+	background-position: right top
+	background-attachment: fixed
+.con-column
+	@include flexbox (nowrap,justify-content,center,column)
+	align-items: center
+	width: 100%
+	background-color: #DDDDDD
+.con-wrap
+	@include flexbox (wrap,justify-content,space-around,row)
+	width: 90%
+.con-column p
+	text-align: center
+//transparent box with input information
+#input-form
+	@include flexbox (nowrap,justify-content,center,column)
+	align-items: center
+	width: 80%
+	max-width: 830px
+	//height: 400px
+	border: 1px solid red
+	background: rgba(255, 255, 255, 0.8)
+	overflow: hidden
+//input forms
+.input-box
+	@include flexbox (nowrap,align-items,flex-start,column)
+	width: 250px
+	margin: 15px 0
+.label
+	width: 100%
+	text-align: left
+	font-size: 120%
+	font-weight: 900
+.input-box input
+	width: 90%
+	height: 30px
+	padding: 0 10px
+	background-color: white
+	border: 1px solid #eee
+	border-radius: 5px
+.input-box select
+	width: 90%
+	height: 30px
+	padding: 0 10px
+	background-color: white
+	border: 1px solid #eee
+	border-radius: 5px
+//button calculate
+#input-form button
+	background-color: #339235
+	color: white
+	width: 120px
+	height: 40px
+	margin: 10px
+	text-align: center
+	text-decoration: none
+	font-size: 120%
+	cursor: pointer
+	border: 1px solid #339235
+	border-radius: 10px
+//output info
+#output
+	margin: 10px 0
+	font-size: 200%
+	color: #339235
+
+//box with small tables
+.tables
+	width: 260px
+	padding: 20px
+	margin: 10px 0
+	border: 1px solid grey
+
+//Media Queries
+//tablets
+@media screen and (min-width: 481px) and (max-width: 1024px)
+	#banner
+		display: none
+//mobile devises
+@media screen and (max-width: 480px)
+	#header
+		height: 80px
+	#header > a
+		display: none
+	#nav
+		justify-content: center
+	#nav a
+		padding: 6px
+	#nav-small
+		justify-content: center
+	#footer
+		height: 120px
+	#footer img
+		margin: 10px 20px 0
+		float: none
+	#banner
+		display: none
+	#banner-hor
+		display: none
+	.pic
+		min-width: 104px
+		width: 45%
+	.pic-big
+		display: none
+	#banner-mob
+		display: block
+		height: 100%
+		overflow: hidden
+	.pic-hide
+		@include flexbox (nowrap,align-items,center,column)
+		min-width: 104px
+		width: 45%
+		margin: 0 0 15px
